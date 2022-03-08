@@ -1,0 +1,25 @@
+[
+  {
+    "first": [
+      { "name": "Tamil", "result": "A" },
+      { "name": "English", "result": "B" },
+      { "name": "Religion", "result": "S" },
+      { "name": "Maths", "result": "A" },
+      { "name": "Science", "result": "A" },
+      { "name": "History", "result": "A" },
+      { "name": "Commerce", "result": "C" },
+      { "name": "Art", "result": "B" },
+      { "name": "ICT", "result": "A" }
+    ]
+  },
+  {
+    "second": [
+      { "name": "Maths", "result": "S" },
+      { "name": "Phy", "result": "S" },
+      { "name": "Che", "result": "S" }
+    ]
+  },
+  {
+    "about":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quolibero tempora cupiditate quasi, natus vero consectetur repudiandaeaccusantium itaque atque? Voluptates non nostrum officiis nemo cum ut sint, veniam aliquam culpa repellendus, nam nobis accusamus? Sed porro molestias, beatae facilis est repellendus. Ipsam excepturiexercitationem consequatur aliquam, qui similique."
+  }
+]
