@@ -1,0 +1,152 @@
+/* 
+.cls-1 {
+    fill: #72af1b;
+  }
+  .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+    fill-rule: evenodd;
+    animation:fillopacity 3s infinite;
+  }
+  
+  .cls-2 {
+    fill: #76b41e;
+    filter: url(#filter);
+    animation:homeSvg 1.2s;
+  }
+  .cls-3 {
+    fill: #7aba1f;
+    filter: url(#filter-2);
+    animation:homeSvg 1.1s ease;
+  }
+  .cls-4 {
+    fill: #81c225;
+    filter: url(#filter-3);
+    animation:homeSvg 1s ease;
+  }
+  .cls-5 {
+    fill: #89cd2a;
+    filter: url(#filter-4);
+    animation:homeSvg 0.9s ease;
+  }
+  .cls-6 {
+    fill: #92d82f;
+    filter: url(#filter-5);
+    animation:homeSvg 0.8s ease;
+  }
+  .cls-7 {
+    fill: #9be137;
+    filter: url(#filter-6);
+    animation:homeSvg 0.7s ease;
+  }
+  .cls-8 {
+    fill: #a3ea3e;
+    filter: url(#filter-7);
+    animation:homeSvg 0.6s ease;
+  }
+  .cls-9 {
+    fill: #aef24e;
+    filter: url(#filter-8);
+    animation:homeSvg 0.5s ease;
+  }
+
+  @keyframes homeSvg {
+      0%{
+          transform:translateX(-80%);
+          opacity: 0;
+      }
+      100%{
+          transform:translateX(0%);
+          opacity: 100%;
+      }
+  }
+  
+  .cls-2:hover, .cls-3:hover, .cls-4:hover, .cls-5:hover, .cls-6:hover, .cls-7:hover, .cls-8:hover, .cls-9:hover {
+    fill-opacity: 0.8;
+  }
+  @keyframes fillopacity {
+    0%{
+      fill-opacity: 0.8;
+    }
+    100%{
+      fill-opacity: 1;
+    }
+  } */
+
+
+  
+.cls-1 {
+  fill: #72af1b;
+}
+.cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+  fill-rule: evenodd;
+  
+}
+.cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+  fill-rule: evenodd;
+  animation:homeSvg 1s;
+}
+
+.cls-2 {
+  fill: #76b41e;
+  filter: url(#filter);
+  animation:homeSvg 1s;
+  animation-delay: 0.7s;
+}
+.cls-3 {
+  fill: #7aba1f;
+  filter: url(#filter-2);
+  animation-delay: 0.6s;
+}
+.cls-4 {
+  fill: #81c225;
+  filter: url(#filter-3);
+  animation-delay: 0.5s;
+}
+.cls-5 {
+  fill: #89cd2a;
+  filter: url(#filter-4);
+  animation-delay: 0.4s;
+}
+.cls-6 {
+  fill: #92d82f;
+  filter: url(#filter-5);
+  animation-delay: 0.3s;
+}
+.cls-7 {
+  fill: #9be137;
+  filter: url(#filter-6);
+  animation-delay: 0.2s;
+}
+.cls-8 {
+  fill: #a3ea3e;
+  filter: url(#filter-7);
+  animation-delay: 0.1s;
+}
+.cls-9 {
+  fill: #aef24e;
+  filter: url(#filter-8);
+}
+
+@keyframes homeSvg {
+    0%{
+        transform:translateX(-80%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0%);
+        opacity: 100%;
+    }
+}
+
+.cls-2:hover, .cls-3:hover, .cls-4:hover, .cls-5:hover, .cls-6:hover, .cls-7:hover, .cls-8:hover, .cls-9:hover {
+  fill-opacity: 0.8;
+ 
+}
+
+@keyframes fillopacity {
+  0%{
+    fill-opacity: 0.8;
+  }
+  100%{
+    fill-opacity: 1;
+  }
+}

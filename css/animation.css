@@ -1,0 +1,39 @@
+.ani-zoom{
+    animation:zoomin 2s;
+}
+
+@keyframes zoomin {
+    0%{
+        opacity: 0;
+        scale:0.2;
+       }
+       100%{
+           opacity:1;
+           scale: 1;
+       }
+}
+@keyframes zoominprofile {
+    0%{
+        opacity:0;
+        scale:0.2;
+    }
+    50%{
+        opacity: 0;
+        scale: 0.3;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.fade_in{
+    opacity: 0;
+    transition: 1s;
+    transform: scale(0.2);
+  }
+  .fade_in.apper{
+    opacity: 1;
+    transform: scale(1);
+  }
