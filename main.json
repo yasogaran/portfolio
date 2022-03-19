@@ -1,0 +1,40 @@
+{
+   "resultOne" : [
+      { "name": "Tamil", "result": "A" },
+      { "name": "English", "result": "B" },
+      { "name": "Religion", "result": "S" },
+      { "name": "Maths", "result": "A" },
+      { "name": "Science", "result": "A" },
+      { "name": "History", "result": "A" },
+      { "name": "Commerce", "result": "C" },
+      { "name": "Art", "result": "B" },
+      { "name": "ICT", "result": "A" }
+    ],
+    "resultTwo": [
+      { "name": "Maths", "result": "S" },
+      { "name": "Phy", "result": "S" },
+      { "name": "Che", "result": "S" }
+    ],
+    "about":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quolibero tempora cupiditate quasi, natus vero consectetur repudiandaeaccusantium itaque atque? Voluptates non nostrum officiis nemo cum ut sint, veniam aliquam culpa repellendus, nam nobis accusamus? Sed porro molestias, beatae facilis est repellendus. Ipsam excepturiexercitationem consequatur aliquam, qui similique.",
+    "cetificates": [
+      { "src": "img1.jpg", "title": "first heading" },
+      { "src": "img2.jpg", "title": "second heading its the larger heading (2020)" },
+      { "src": "img3.jpg", "title": "third heading" },
+      { "src": "img4.jpg", "title": "forth heading" },
+      { "src": "img1.jpg", "title": "first heading" },
+      { "src": "img2.jpg", "title": "second heading" },
+      { "src": "img3.jpg", "title": "third heading" },
+      { "src": "img4.jpg", "title": "forth heading" },
+      { "src": "img1.jpg", "title": "first heading" },
+      { "src": "img2.jpg", "title": "second heading" },
+      { "src": "img3.jpg", "title": "third heading" },
+      { "src": "img4.jpg", "title": "forth heading" }
+    ],
+    "extra":[
+      {"name":"Baseball", "duration":"@ school", "logo":"baseball.jpg", "link":"abcd.com"},
+      {"name":"Scout", "duration":"@ school", "logo":"scout.jpg", "link":"abcd.com"},
+      {"name":"Cadet", "duration":"@ school", "logo":"cadet.jpg", "link":"abcd.com"},
+      {"name":"Prefect Board", "duration":"@ school", "logo":"prefect.jpg", "link":"abcd.com"},
+      {"name":"Rego", "duration":"@active", "logo":"rego.jpg", "link":"abcd.com"}
+    ]
+}

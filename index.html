@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/svgstyle.css" />
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/horizontalscroll.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar a-center">
       <ul class="menu">
         <li>
           <a
@@ -27,12 +28,24 @@
         <li>
           <a href="#education" class="nav-item education" id="">Education</a>
         </li>
+        <li><a href="#extra" class="nav-item extra" id="">Extra</a></li>
+        <li>
+          <a href="#certificate" class="nav-item certificate" id=""
+            >Certificates</a
+          >
+        </li>
         <li>
           <a href="#language" class="nav-item language" id="">language</a>
         </li>
-        <li><a href="#certificate" class="nav-item certificate" id="">Certificates</a></li>
       </ul>
     </nav>
+    <div
+      class="full-screen row a-center"
+      id="full-screen"
+      onclick="closeFullScreen()"
+    >
+      <img src="" alt="" id="full-screen-preview" />
+    </div>
     <!-- home section start -->
     <section id="home">
       <!-- SVG -->
@@ -203,7 +216,7 @@
       </svg>
       <div class="home-content">
         <p class="text-1 ani-zoom">Hello, I'm</p>
-        <p class="text-2 ani-zoom">Yaso</p>
+        <p class="text-2 ani-zoom">Whoami</p>
         <p class="text-3" id="ani-char">I'm a Webdesigner</p>
       </div>
       <div class="home-image">
@@ -213,9 +226,7 @@
     <!-- About section -->
     <section class="fade_in" id="about">
       <h1 class="heading">ABOUT</h1>
-      <p id="abouttext">
-        
-      </p>
+      <p id="abouttext"></p>
     </section>
     <!-- Skill section -->
     <section class="fade_in" id="skill">
@@ -247,17 +258,44 @@
     <section class="fade_in" id="education">
       <h1 class="heading">Education</h1>
       <div class="row">
-        <div class="rslt-box">
+        <div class="rslt-box a-center" onclick="showFullScreen('image/Ol.jpg')">
           <h1>GCE O/L</h1>
 
           <table id="olresult"></table>
         </div>
-        <div class="rslt-box">
+        <div class="rslt-box a-center" onclick="showFullScreen('image/Al.jpg')">
           <h1>GCE A/L</h1>
           <table id="ALresult"></table>
         </div>
       </div>
     </section>
+    <!-- sports and sociies -->
+    <section class="fade_in" id="extra">
+      <h1 class="heading">Sports & Socities</h1>
+      <div id="extra-box" claass="a-center">
+       
+      </div>
+    </section>
+
+    <!-- Certificate section -->
+    <section class="fade_in a-center" id="certificate">
+      <h1 class="heading">CETIFICATES</h1>
+      <div class="horizontal-showcase">
+        <div class="horizontal-scroll-container m-auto" id="">
+          <div
+            class="horizontal-scroll-box row"
+            id="horizontal-scroll-box"
+          ></div>
+          <button class="btn-previous" onclick="scrollHorizontal('+1');">
+            &lt;
+          </button>
+          <button class="btn-next" onclick="scrollHorizontal('-1')">
+            &gt;
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- Language section -->
     <section class="fade_in" id="language">
       <h1 class="heading">Language</h1>
@@ -266,51 +304,48 @@
           <h1></h1>
           <abbr></abbr><span><div class="line"></div></span>
         </div>
-        <div class="bar" data-percentage="85" data-subject="Sinhala">
+        <div class="bar" data-percentage="95" data-subject="Sinhala">
           <h1></h1>
           <abbr></abbr><span><div class="line"></div></span>
         </div>
-        <div class="bar" data-percentage="60" data-subject="English">
+        <div class="bar" data-percentage="80" data-subject="English">
           <h1></h1>
           <abbr></abbr><span><div class="line"></div></span>
         </div>
       </div>
-    </section>
-    <!-- Certificate section -->
-    <section class="fade_in" id="certificate">
-      <h1 class="heading">CERTIFICATES</h1>
-      <div class="x">
-      <div class="card">
-        <h2>Responsive Web design</h2>
-        <p>Free code camp org</p>
-        <p>2021</p>
-      </div>
-      <div class="card">
-        <h2>Front End web developing</h2>
-        <p>Free code camp org</p>
-        <p>2021</p>
-      </div>
-    </div>
     </section>
     <!-- Contact section -->
-    <section class="" id="contact">
+    <section class="" id="footer">
       <!-- Contact division -->
       <div class="left">
         <div class="label">
-          <img src="image/email.png" alt="" class="icon icon-small" />
-          <p> <a href="mailto:yasogaran@gmail.com" style="text-decoration: none; color:#fff;"> yasogaran@gmail.com </a></p>
+          <a
+            href="mailto:yasogaran@gmail.com"
+            target="_blank"
+          >
+            <img src="image/email.png" alt="" class="icon icon-small" />
+            <p>yasogaran@gmail.com</p>
+          </a>
         </div>
         <div class="label">
-          <img src="image/phone.png" alt="" class="icon icon-small" />
-          <p> <a href="tel:+94789382132" style="text-decoration: none; color:#fff;">+94789382132 </a></p>
+          <a href="tel:+94789382132"target="_blank">
+            <img src="image/phone.png" alt="" class="icon icon-small" />
+            <p>+94789382132</p>
+          </a>
         </div>
         <div class="label">
-          <img src="image/whatsapp.png" alt="" class="icon icon-small" />
-          <p>789382132</p>
+          <a
+            href="https://wa.me/94718706031?text=This%20Is%20a%20test%20message"
+          target="_blank">
+            <img src="image/whatsapp.png" alt="" class="icon icon-small" />
+            <p>94789382132</p>
+          </a>
         </div>
         <div class="label">
+          <a href="https://www.google.com/maps/place/Muloya/@7.0902987,80.7356652,15z/data=!3m1!4b1!4m5!3m4!1s0x3ae37c21c313e051:0x7b4a466378845478!8m2!3d7.0892158!4d80.7463852"target="_blank">
           <img src="image/location.png" alt="" class="icon icon-small" />
           <p>Srilanka</p>
+        </a>
         </div>
       </div>
       <!-- Feedback division -->
@@ -328,12 +363,10 @@
         </form>
       </div>
     </section>
-    <div class="footer">
-
-    </div>
     <script src="jquery.min.js"></script>
     <script src="js/skill.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
+    <script src="js/horizontalscroll.js"></script>
   </body>
 </html>

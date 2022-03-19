@@ -16,18 +16,19 @@ window.addEventListener("scroll",()=>{
         }
     });
 })
-
+//JSON Connect
 var xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", "result.json", false);
+xmlhttp.open("GET", "main.json", false);
 xmlhttp.send();
 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
   var result = xmlhttp.responseText;
   var data = JSON.parse(result);
 
-  var firstResult = data[0]["first"];
-  var secondResult = data[1]["second"];
-  var abouttext = data[2]["about"];
-
+  var firstResult = data["resultOne"];
+  var secondResult = data["resultTwo"];
+  var abouttext = data["about"];
+  var cetificate = data['cetificates']
+  var extra = data["extra"];
   let output ='';
   for (let i = 0; i < firstResult.length; i++) {
     const element = firstResult[i];
@@ -53,3 +54,35 @@ output = '';
 }
 
 document.getElementById("abouttext").innerHTML = abouttext;
+
+//for cetififcate section
+const scrollBox = document.getElementById("horizontal-scroll-box");
+for (let i = 0; i < cetificate.length; i++) {
+  let element = cetificate[i];
+  let src = element["src"];
+  scrollBox.innerHTML +=
+    ' <div class="card row a-center" onclick=' +
+    "showFullScreen('image/cetificate/" +
+    src +
+    "')" +
+    '>\
+          <img src="image/cetificate/' +
+    src +
+    '" alt="" class="card-image">\
+          <div class="caption row a-center">' +
+    element["title"] +
+    "</div>\
+    <div class='search-logo'></div> \
+          </div>";
+}
+
+//for sports and socity
+const extraBox = document.getElementById("extra-box");
+for (let i = 0; i < extra.length; i++) {
+  const element = extra[i];
+  extraBox.innerHTML +='<div class="card">\
+  <h2>'+element["name"] +'</h2>\
+  <p>'+element["duration"] +'</p>\
+  <img src="image/'+element["logo"] +'" alt="" />\
+</div>';
+}
