@@ -1,33 +1,3 @@
-// const scrollBox = document.getElementById("horizontal-scroll-box");
-// //json connect
-// let xmlht = new XMLHttpRequest();
-// xmlht.open("GET", "my.json", false);
-// xmlht.send();
-
-// if (xmlht.readyState == 4 && xmlht.status == 200) {
-//     console.log("Done");
-//   var data = xmlht.responseText;
-//   var result = JSON.parse(data);
-//   var res = result["cards"];
-//   for (let i = 0; i < res.length; i++) {
-//     let element = res[i];
-//     let src = element["src"];
-//     scrollBox.innerHTML +=
-//       ' <div class="card row a-center" onclick=' +
-//       "showFullScreen('image/cetificate/" +
-//       src +
-//       "')" +
-//       '>\
-//             <img src="image/cetificate/' +
-//       src +
-//       '" alt="" class="card-image">\
-//             <div class="caption row a-center">' +
-//       element["title"] +
-//       "</div>\
-//             </div>";
-//   }
-// }
-
 //fullscreen show
 let carouselIndex = 0;
 const fullScreen = document.getElementById("full-screen");
@@ -59,3 +29,42 @@ function scrollHorizontal(val) {
   sCount.style.left = currentScrollPosition + "px";
 }
 
+
+//drag function///////////////////////////////
+/* let pressed = false;
+let startX;
+let x;
+
+hScroll.addEventListener('mousedown',(e)=>{
+  pressed = true;
+  startX = e.offsetX - sCount.offsetLeft;
+  hScroll.style.cursor = 'grabbing'
+})
+hScroll.addEventListener('mouseleave',()=>{
+  hScroll.style.cursor = 'default';
+})
+hScroll.addEventListener('mouseup',()=>{
+  hScroll.style.cursor = 'grab';
+})
+hScroll.addEventListener('mouseup',()=>{
+  pressed = false;
+})
+hScroll.addEventListener('mousemove',(e)=>{
+  if(!pressed) return;
+  e.preventDefault();
+  x= e.offsetX;
+  sCount.style.left = (x-startX)+'px';
+checkBoundary();
+})
+
+function checkBoundary(){
+  let outer = hScroll.getBoundingClientRect();
+  let inner = sCount.getBoundingClientRect();
+  if(parseInt(sCount.style.left)>0){
+    sCount.style.left = '0px';
+  }else if(inner.right < outer.right){
+    sCount.style.left = (outer.width - inner.width) + 'px';
+  }
+}
+
+checkBoundary() */

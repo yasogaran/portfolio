@@ -6,7 +6,12 @@
 .horizontal-scroll-container {
   position: relative;
   width: 95%;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  user-select: none;
+}
+.horizontal-scroll-container::-webkit-scrollbar{
+display: none;
+
 }
 .horizontal-scroll-container button {
   width: 50px;
@@ -38,7 +43,7 @@
   right: 20px;
 }
 .horizontal-scroll-box {
-  width: min-content;
+  width:max-content;
   margin: 30px auto;
   background-color: #444;
   height: 95%;
@@ -68,7 +73,6 @@
   justify-content: center;
   overflow-x: hidden;
   background-color: rgb(219, 217, 217);
-  cursor: cell;
   border-radius: 20px;
   transition: 0.7s;
   position: relative;

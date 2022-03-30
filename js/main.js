@@ -86,3 +86,23 @@ for (let i = 0; i < extra.length; i++) {
   <img src="image/'+element["logo"] +'" alt="" />\
 </div>';
 }
+
+
+
+//navmenu @ mobile
+const menu = document.querySelector('.menu');
+const toggleButton = document.querySelector('.toggle-button');
+
+toggleButton.addEventListener('click',()=>{
+  menu.classList.toggle('active');
+  toggleButton.classList.toggle('active');
+  
+})
+
+navLi.forEach((link)=>{
+  link.addEventListener('click',()=>{
+    menu.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+
+  })
+})
